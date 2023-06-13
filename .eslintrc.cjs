@@ -1,6 +1,5 @@
 /**
  * @fileoverview eslint configuration file.
- * @author Alvin Lin (alvin@omgimanerd.tech)
  */
 
 module.exports = {

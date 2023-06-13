@@ -9,16 +9,8 @@
     "watch": "nodemon --experimental-specifier-resolution=node dist/server.js",
     "pm2": "PORT=5001 pm2 start dist/server.js --name tankanarchy --node-args='--experimental-specifier-resolution-node'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/penumbragames/tankanarchy.git"
-  },
-  "author": "Alvin Lin (omgimanerd)",
+  "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/penumbragames/tankanarchy/issues"
-  },
-  "homepage": "https://github.com/penumbragames/tankanarchy#readme",
   "dependencies": {
     "express": "^4.17.0",
     "morgan": "^1.10.0",
