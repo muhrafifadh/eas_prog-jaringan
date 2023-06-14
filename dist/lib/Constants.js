@@ -1,5 +1,5 @@
 export var SOCKET;
-(function (SOCKET) {
+(function(SOCKET) {
     SOCKET["UPDATE"] = "update";
     SOCKET["NEW_PLAYER"] = "newPlayer";
     SOCKET["PLAYER_ACTION"] = "playerAction";
@@ -22,7 +22,7 @@ export const POWERUP_MAX_COUNT = 50;
 export const POWERUP_MIN_DURATION = 5000;
 export const POWERUP_MAX_DURATION = 15000;
 export var POWERUP_TYPES;
-(function (POWERUP_TYPES) {
+(function(POWERUP_TYPES) {
     POWERUP_TYPES["HEALTH_PACK"] = "HEALTH_PACK";
     POWERUP_TYPES["SHOTGUN"] = "SHOTGUN";
     POWERUP_TYPES["RAPIDFIRE"] = "RAPIDFIRE";
@@ -41,13 +41,13 @@ export const WORLD_MAX = 2000;
 export const WORLD_PADDING = 30;
 export const CANVAS_WIDTH = 1280;
 export const CANVAS_HEIGHT = 720;
-export const DRAWING_NAME_FONT = '14px Helvetica';
+export const DRAWING_NAME_FONT = '14px Montserrat';
 export const DRAWING_NAME_COLOR = 'black';
 export const DRAWING_HP_COLOR = 'red';
 export const DRAWING_HP_MISSING_COLOR = 'grey';
 export const DRAWING_IMG_BASE_PATH = '/img';
 export var DRAWING_IMG_KEYS;
-(function (DRAWING_IMG_KEYS) {
+(function(DRAWING_IMG_KEYS) {
     DRAWING_IMG_KEYS["SELF_TANK"] = "SELF_TANK";
     DRAWING_IMG_KEYS["SELF_TURRET"] = "SELF_TURRET";
     DRAWING_IMG_KEYS["OTHER_TANK"] = "OTHER_TANK";

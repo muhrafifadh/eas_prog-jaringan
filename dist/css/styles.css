@@ -1,1 +1,201 @@
-body,html{width:100%;text-align:center;user-select:none}#name-prompt-overlay{width:100%;height:100%;position:absolute;top:0;right:0;bottom:0;left:0;background-color:rgba(49,49,49,.5);z-index:1}#name-prompt-overlay #name-prompt-container{position:absolute;width:490px;height:100px;top:50%;right:0;left:0;margin:-50px auto;padding:30px;background:#bbb;z-index:2;border-radius:10px}#name-prompt-overlay #name-prompt-container input,#name-prompt-overlay #name-prompt-container input:focus{outline:none}#name-prompt-overlay #name-prompt-container #name-submit:hover{cursor:pointer}#container table{margin:auto;border-collapse:separate}#leaderboard-container{width:200px;height:600px;border:1px solid #000}#leaderboard-container h3{height:50px;padding:5px}#leaderboard-container #leaderboard{height:400px;margin:0;padding:5px}#leaderboard-container #leaderboard li{list-style-type:none;background-color:#b9b9b9;margin-right:5px;padding:3px;border-radius:2px}#canvas-container{border:1px solid #000;padding:0}#canvas-container #canvas{width:1280px;height:720px;margin:0;outline:none;background-color:#fff;cursor:crosshair}#chat-container{width:200px;height:596px;padding:0;border:1px solid #000}#chat-container #chat-display{height:570px;padding:0;margin:0;text-align:left;overflow-y:scroll}#chat-container #chat-display li{list-style-type:none;padding:5px}#chat-container #chat-display li:nth-child(2n){background:#ccc}#chat-container #chat-display li:nth-child(odd){background:#aaa}#chat-container #chat-display .notification{font-weight:700;color:#b30000;padding:6px}#chat-container #chat-input{box-sizing:border-box;width:100%;height:30px;padding:5px;border-top:1px solid #000}#icons-container>div{display:inline-block}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+body,
+html {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #050505;
+    color: #f7f7f7;
+}
+
+#container table th h1 {
+    font-weight: 700;
+    color: #1cc659;
+}
+
+#leaderboard-container h3 {
+    font-weight: 700;
+    background-color: #0d0d0d;
+}
+
+#name-prompt-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(49, 49, 49, .25);
+    z-index: 1;
+}
+
+#name-prompt-overlay #name-prompt-container {
+    position: absolute;
+    width: 490px;
+    height: 100px;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: -50px auto;
+    padding: 30px;
+    background-color: rgba(49, 49, 49, .25);
+    z-index: 2;
+    border-radius: 10px;
+}
+
+#name-prompt-overlay #name-prompt-container input,
+#name-prompt-overlay #name-prompt-container input:focus {
+    outline: none;
+}
+
+#name-prompt-overlay #name-prompt-container #name-submit:hover {
+    cursor: pointer;
+}
+
+#container table {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#container table tr:nth-child(2) td:nth-child(1) {
+    width: 15%;
+}
+
+#container table tr:nth-child(2) td:nth-child(2) {
+    width: 70%;
+}
+
+#container table tr:nth-child(2) td:nth-child(3) {
+    width: 15%;
+}
+
+#icons-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#icons-container>div {
+    flex: 1;
+    text-align: center;
+}
+
+#leaderboard-container {
+    height: 100%;
+    background-color: #0d0d0d;
+    font-size: 13px;
+    color: #1cc659;
+}
+
+#leaderboard-container #leaderboard {
+    margin: 0;
+    padding: 5px;
+}
+
+#leaderboard-container #leaderboard li {
+    list-style-type: none;
+    background-color: #1d1d1d;
+    margin-right: 5px;
+    padding: 3px;
+    color: #f7f7f7;
+    border-radius: 2px;
+}
+
+#leaderboard-container #leaderboard li .player-name {
+    font-weight: 600;
+}
+
+#canvas-container {
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#canvas-container #canvas {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    outline: none;
+    background-color: #050505;
+    cursor: crosshair;
+}
+
+#chat-container {
+    height: 100%;
+    padding: 0;
+    font-size: 13px;
+    background-color: #0d0d0d;
+}
+
+#chat-container #chat-display {
+    height: calc(100% - 36px);
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    overflow-y: scroll;
+    background-color: #0d0d0d;
+}
+
+#chat-container #chat-display li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+#chat-container #chat-display li:nth-child(2n) {
+    background: #050505;
+}
+
+#chat-container #chat-display li:nth-child(odd) {
+    background: #0d0d0d;
+}
+
+#chat-container #chat-display .notification {
+    font-weight: 700;
+    color: #1cc659;
+    padding: 6px;
+}
+
+#chat-container #chat-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border-top: 1px solid #f7f7f7;
+}
+
+#icons-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #0d0d0d;
+}
+
+#icons-container>div {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#icons-container>div img {
+    width: 30px;
+    height: 30px;
+}

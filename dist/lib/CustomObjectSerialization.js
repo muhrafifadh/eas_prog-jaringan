@@ -10,8 +10,7 @@ export function getReplacerReviver(types) {
             const currentSuperclasses = numSuperclasses.get(typename) || 0;
             if (Object.prototype.isPrototypeOf.call(typeOther, type)) {
                 numSuperclasses.set(typename, currentSuperclasses + 1);
-            }
-            else {
+            } else {
                 numSuperclasses.set(typename, currentSuperclasses);
             }
         }
