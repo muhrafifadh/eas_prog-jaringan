@@ -29,9 +29,6 @@ npm run start
 - Please use ESLint to lint your code and follow the stylistic guidelines
   set in our `.eslintrc` file.
 
-# Creators:
 
-- Alvin Lin (omgimanerd)
-- Kenneth Li (noobbyte)
 
 &copy; 2015 Penumbra Games
